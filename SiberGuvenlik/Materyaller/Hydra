@@ -1,0 +1,6 @@
+Saldırı Hedefinizi Belirleyin: Hangi servise (SSH, FTP, HTTP vb.) parola atakları yapmak istediğinizi 
+belirleyin. Örneğin, SSH sunucusuna saldırmak istiyorsanız hedef IP adresini ve SSH kullanıcı adını 
+bilmelisiniz.
+
+Hydra Komutunu Oluşturun: Hydra'yı kullanmak için bir komut oluşturmanız gerekir.
+Genel olarak, komutunuz aşağıdaki gibi olacaktır:
