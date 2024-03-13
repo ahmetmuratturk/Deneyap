@@ -7,7 +7,7 @@ hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood 192.168.1.1
     -c 10000: 10000 SYN paketi gönderilecek.
     -d 120: Gönderilecek SYN paketlerinin veri boyutu 120 byte olacak.
     -S: SYN flag'ini belirtir, böylece hedef sunucuya SYN talepleri gönderilir.
-    -w 64: Windows boyutunu belirler.
+    -w 64: çerçeve boyutunu belirler.
     -p 80: Hedef portu belirler, burada 80 numaralı HTTP portu seçilmiştir.
     --flood: Sürekli olarak SYN paketleri gönderir, durmaksızın saldırı gerçekleştirir.
     192.168.1.35: Hedef sunucunun IP adresidir, bu örnekte yerel ağdaki bir sunucu olarak kabul edilmiştir.
