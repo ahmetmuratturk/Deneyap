@@ -1,0 +1,1 @@
+hping3, Kali Linux'ta varsayılan olarak yüklü gelen bir araçtır. SYN flood saldırısı yapmak için hping3'ü kullanacağız. Aşağıdaki komutla SYN paketleri göndererek saldırıyı başlatabilirsiniz:
