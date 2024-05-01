@@ -1,0 +1,17 @@
+Zip Dosyasını Belirleyin: Şifresini kırmak istediğiniz zip dosyasının tam yolunu belirleyin. Örneğin, masaüstündeki bir dosya için:
+
+cd Desktop
+komutuyla ilgili klasöre gidin. 
+
+Zip2John ile Zip Dosyasını John Formatına Dönüştürün: John'un zip dosyasını anlayabilmesi için zip dosyasını John formatına dönüştürmemiz gerekiyor. Bunun için aşağıdaki komutu kullanın:
+
+zip2john test1.zip > hash.txt
+
+Burada test1.zip, kırılacak olan zip dosyasının adıdır. hash.txt, dönüştürülen hash'in kaydedileceği dosyanın adıdır.
+
+John ile Şifreyi Kırın: Şimdi oluşturduğumuz hash dosyasını John'a vererek şifreyi kırmaya çalışabiliriz:
+
+john hash.txt
+
+Sonuçları Kontrol Edin: John işlemi tamamladıktan sonra, başarıyla kırılmış olan şifreler bir dosyada saklanır. Bu dosyayı kontrol ederek şifreyi bulabilirsiniz:      
+john --show hash.txt

@@ -1,0 +1,24 @@
+Saldırı Hedefinizi Belirleyin: Hangi servise (SSH, FTP, HTTP vb.) parola atakları yapmak istediğinizi 
+belirleyin. Örneğin, SSH sunucusuna saldırmak istiyorsanız hedef IP adresini ve SSH kullanıcı adını 
+bilmelisiniz.
+
+Hydra Komutunu Oluşturun: Hydra'yı kullanmak için bir komut oluşturmanız gerekir.
+Genel olarak, komutunuz aşağıdaki gibi olacaktır:
+
+hydra -l <kullanıcı_adı> -P <parola_listesi> <hedef_IP_adresi> <servis>
+
+
+    -l: Hedef servise bağlanmak için kullanılacak olan kullanıcı adı.
+    -P: Kullanılacak parola listesinin yolu.
+    <hedef_IP_adresi>: Saldırı yapılacak hedefin IP adresi.
+    <servis>: Saldırı yapılacak servisin türü (örneğin, ssh, ftp, http).
+
+Parola Listesi Seçin: Parola atakları yapmak için bir parola listesi gereklidir. Hydra, genellikle kullanılan bazı yaygın parolaları içeren birkaç önceden tanımlanmış parola listesiyle birlikte gelir. Ancak daha etkili bir saldırı için kendiniz de bir parola listesi oluşturabilirsiniz.
+
+Hydra'yı Çalıştırın: Oluşturduğunuz komutu kullanarak Hydra'yı çalıştırın. Örneğin, SSH için:
+
+hydra -l kullanici_adi -P /usr/share/wordlists/rockyou.txt ssh://hedef_IP_adresi
+
+Bu komut, rockyou.txt adlı bir parola listesini kullanarak SSH hedefine saldırmak için Hydra'yı çalıştıracaktır.
+
+Sonuçları İnceleyin: Hydra, parola deneme işlemini gerçekleştirecek ve başarılı olan herhangi bir kombinasyonu size gösterecektir.

