@@ -15,11 +15,11 @@ giris_egitim, giris_test, cikis_egitim,cikis_test = train_test_split(giris,cikis
 print("Egitim veri seti boyutu =", len(giris_egitim))
 print("Test veri seti boyutu =", len(cikis_test))
 
-#from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+#from sklearn.neighbors import KNeighborsClassifier
 
-#model = DecisionTreeClassifier()
-model = KNeighborsClassifier()
+model = DecisionTreeClassifier()
+#model = KNeighborsClassifier()
 
 model.fit(giris_egitim,cikis_egitim)
 
