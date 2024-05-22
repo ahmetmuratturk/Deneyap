@@ -3,9 +3,9 @@ import PIL.Image as img
 import os
 import pandas as pd
 
-bakteri_yaprak_yanik="bitki_veri-seti/rice_leaf_diseases/Bacterial leaf blight/"
-kahve_nokta="bitki_veri-seti/rice_leaf_diseases/Brown spot/"
-yaprak_isi="bitki_veri-seti/rice_leaf_diseases/Leaf smut/"
+bakteri_yaprak_yanik="rice_leaf_diseases/Bacterial leaf blight/"
+kahve_nokta="rice_leaf_diseases/Brown spot/"
+yaprak_isi="rice_leaf_diseases/Leaf smut/"
 
 def dosya(yol):
     return [os.path.join(yol,f) for f in os.listdir(yol)]
@@ -55,7 +55,7 @@ from sklearn.model_selection import GridSearchCV
 
 Giris=np.array(tum_veri)[:,:784]
 Cikis=np.array(tum_veri)[:,784]
-Giris_train, Giris_test, Cikis_train, Cikis_test = train_test_split(Giris, Cikis, test_size=0.2, random_state=109)
+Giris_train, Giris_test, Cikis_train, Cikis_test = train_test_split(Giris, Cikis, test_size=0.2, random_state=100)
 
 model= DecisionTreeClassifier()
 clf = model.fit(Giris_train,Cikis_train)
