@@ -89,7 +89,7 @@ for adim in range(1000):
 print('Eğitim tamamlandı.')
 
 ogr_sonrasi_satir = input('Robotun harekete başlayacağı satır indeksini giriniz:')
-ogr_sonrasi_sutun = input('Robotun harekete başlayacağı satır indeksini giriniz:')
+ogr_sonrasi_sutun = input('Robotun harekete başlayacağı sutun indeksini giriniz:')
 
 print('Kargo noktasına giden rota:',
       en_kisa_mesafe(int(ogr_sonrasi_satir), int(ogr_sonrasi_sutun)))
