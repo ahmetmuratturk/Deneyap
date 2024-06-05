@@ -13,16 +13,16 @@ Fitness Fonksiyonu:
 
 Fitness fonksiyonu, amaç fonksiyonunun arzulanan çıktıya ne kadar yakın olduğunu belirler. Fitness fonksiyonu şu şekilde tanımlanmıştır:
 
-fitness(W)=1∣f(W)−D∣fitness(W)=∣f(W)−D∣1​
+fitness(W)=1∣f(W)−D∣
 Açık Formda Problemin İfadesi:
 
     Amaç fonksiyonunu hesapla:
 
-f(W)=4w1−2w2+3.5w3+5w4−11w5−4.7w6f(W)=4w1​−2w2​+3.5w3​+5w4​−11w5​−4.7w6​
+f(W)=4w1−2w2+3.5w3+5w4−11w5−4.7w6
 
     Fitness fonksiyonunu hesapla:
 
-fitness(W)=1∣(4w1−2w2+3.5w3+5w4−11w5−4.7w6)−44∣fitness(W)=∣(4w1​−2w2​+3.5w3​+5w4​−11w5​−4.7w6​)−44∣1​
+fitness(W)=1∣(4w1−2w2+3.5w3+5w4−11w5−4.7w6)−44∣
 Optimizasyon Amacı:
 
 Fitness fonksiyonu, WW çözüm vektörünün arzulanan çıktıya ulaşmasına ne kadar yakın olduğunu değerlendirir. Genetik algoritma, fitness fonksiyonunu maksimize ederek en uygun WW çözüm vektörünü bulmaya çalışır. Bu, amaç fonksiyonunun arzulanan çıktıya en yakın olduğu noktayı belirlemeyi sağlar.
