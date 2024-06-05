@@ -1,14 +1,14 @@
 Bu kodda optimize edilen fonksiyon, fitness_func fonksiyonunda tanımlanan uygunluk fonksiyonudur. Bu fonksiyon, verilen function_inputs ve bir çözüm vektörü (genetik algoritma tarafından üretilen bir çözüm) kullanılarak belirli bir hedef değere (desired_output) ulaşmayı amaçlar. Matematiksel olarak bu optimizasyon problemini şöyle ifade edebiliriz:
 Problemin Tanımı:
-    Girdi Vektörü: X=[4,−2,3.5,5,−11,−4.7]X=[4,−2,3.5,5,−11,−4.7]
-    Çözüm Vektörü: W=[w1,w2,w3,w4,w5,w6]W=[w1​,w2​,w3​,w4​,w5​,w6​]
-    Arzulanan Çıktı: D=44D=44
+    Girdi Vektörü: X=[4,−2,3.5,5,−11,−4.7]
+    Çözüm Vektörü: W=[w1,w2,w3,w4,w5,w6]
+    Arzulanan Çıktı: D=44
 
 Amaç Fonksiyonu:
 
 Amaç fonksiyonu, çözüm vektörü ile girdi vektörünün çarpımı ile elde edilen sonucu arzulanan çıktıya yakınlaştırmaktır.
 
-f(W)=∑i=16wi⋅Xif(W)=∑i=16​wi​⋅Xi​
+f(W)=∑i=16wi⋅Xi
 Fitness Fonksiyonu:
 
 Fitness fonksiyonu, amaç fonksiyonunun arzulanan çıktıya ne kadar yakın olduğunu belirler. Fitness fonksiyonu şu şekilde tanımlanmıştır:
